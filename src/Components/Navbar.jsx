@@ -1,12 +1,13 @@
 
 import React, { useState } from "react";
 import { FaBars, FaUser, FaTachometerAlt, FaTasks, FaProjectDiagram } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import Footer from "./Footer";
 
 
 const Navbar = () => {
+  const navigate = useNavigate()
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
   const projects = location.state?.projects || [];
@@ -50,9 +51,8 @@ const Navbar = () => {
         </button>
         {isDropdownOpen && (
           <div className="absolute right-0 mt-2 w-48 bg-white text-black shadow-md rounded-lg overflow-hidden">
-            <button className="block w-full px-4 py-2 text-left hover:bg-gray-200">Profile</button>
-            <button className="block w-full px-4 py-2 text-left hover:bg-gray-200">Settings</button>
-            <button className="block w-full px-4 py-2 text-left hover:bg-gray-200">Logout</button>
+
+            <button className="block w-full px-4 py-2 text-left hover:bg-gray-200" onClick={()=>navigate('/')}>Logout</button>
           </div>
         )}
       </div>
