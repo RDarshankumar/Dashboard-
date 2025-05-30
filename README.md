@@ -1,12 +1,25 @@
-# React + Vite
+# 🎓 Student Dashboard (React + Firebase + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **Student Dashboard** created as an internship-style learning project. Built with **React** for frontend, **Tailwind CSS** for modern styling, and **Firebase Authentication** for secure login/signup. Student data is stored in the browser's **localStorage** for simplicity.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **Firebase Authentication** (Email/Password Login & Register)
+- 📝 **Add Student Info (Name, Email, Course, etc.)**
+- 💾 **Save Student Data in Local Storage**
+- 📊 **Dashboard View of Student Data**
+- 🧼 **Clean UI using Tailwind CSS**
+- 📱 **Mobile Responsive Design**
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology      | Purpose                  |
+|----------------|--------------------------|
+| React.js        | UI and component logic   |
+| Tailwind CSS    | Styling and responsiveness |
+| Firebase Auth   | Login and Signup system  |
+| localStorage    | Data persistence in browser |
+| React Router    | Page navigation          |
+
+
+
